@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.timemanager2"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="com.android.alarm.permission.SET_ALARM"
+        tools:ignore="ManifestOrder" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/NoTitle">
+        <activity android:name=".warning"></activity>
+        <activity android:name=".load" />
+        <activity android:name=".Questions" />
+        <activity android:name=".waiting" />
+        <activity android:name=".RankList" />
+        <activity android:name=".Logining">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".skin" />
+        <activity android:name=".luckdraw" />
+        <activity android:name=".Score" />
+        <activity android:name=".add" />
+        <activity android:name=".date" />
+        <activity android:name=".design">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".register" />
+
+        <receiver android:name=".MyReceiver" />
+    </application>
+
+</manifest>

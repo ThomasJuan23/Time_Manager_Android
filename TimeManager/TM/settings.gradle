@@ -1,0 +1,3 @@
+include ':timemanager2'
+include ':app'
+rootProject.name = "Assignment"
